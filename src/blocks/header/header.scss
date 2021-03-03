@@ -1,5 +1,54 @@
 
 header {
+  .navigation {
+    @media (max-width: 1199px) {
+      display: none;
+    }
+      background-color: $graphite;
+      padding-top: 28px;
+      padding-bottom: 28px;
+      .navigation-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__logo {
+          .logo {
+            width: 150px;
+            height: 45px;
+          }
+        }
+        &__nav {
+          ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            li {
+              border-left: 1px solid #494949;
+              padding-left: 10px;
+              padding-right: 10px;
+              @media (max-width: 1399px) {
+                padding-left: 5px;
+                padding-right: 5px;
+              }
+              &:nth-child(1) {
+                border: 0;
+              }
+              a {
+                color: #fff;
+                text-decoration: none;
+                text-transform: uppercase;
+
+                &:hover {
+                  text-decoration: underline;
+                  text-underline-offset: 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+  }
   .navigation-responsive {
     @media (min-width: 1200px) {
       display: none;

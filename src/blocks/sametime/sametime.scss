@@ -6,9 +6,50 @@
   }
   ul {
     text-align: left;
-    list-style: decimal;
+    list-style: none;
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
     li {
       margin-bottom: 16px;
+      @media (min-width: 768px) {
+        flex: 1 0 270px;
+        max-width: 300px;
+        border-right: 1px solid $graphite;
+        padding: 10px 10px 10px 35px;
+        &:nth-child(3) {
+          border-right: 0;
+        }
+      }
+    }
+  }
+  &__footer {
+    position: relative;
+    img {
+      z-index: -1;
+      position: absolute;
+      width: 100%;
+      height: auto;
+      left: 0;
+      top: -85px;
+      @media (min-width: 1400px) {
+        top: -330px;
+      }
+      @media (min-width: 1200px) {
+        top: -300px;
+      }
+      @media (min-width: 992px) {
+        top: -250px;
+      }
+      @media (min-width: 768px) {
+        top: -190px;
+      }
+      @media (min-width: 576px) {
+        top: -150px;
+      }
     }
   }
 }

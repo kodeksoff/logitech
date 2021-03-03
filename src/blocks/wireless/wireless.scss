@@ -1,7 +1,6 @@
 .wireless {
   text-align: center;
   background-color: $l-gray;
-
   .wireless-title {
     display: flex;
     flex-direction: column;
@@ -22,8 +21,44 @@
     font-weight: 900;
     text-transform: uppercase;
     color: $d-gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    .wireless__font-70 {
+      font-size: 18.75rem;
+      line-height: 16rem;
+      @media (max-width: 992px) {
+        font-size: 11.375rem;
+        margin-right: 30px;
+      }
+      @media (max-width: 768px) {
+        font-size: 3.75rem;
+        margin-right: 15px;
+        line-height: 6rem;
+      }
+    }
+    .wireless__font-days {
+      font-size: 6rem;
+      @media (max-width: 992px) {
+        font-size: 9.375rem;
+      }
+      @media (max-width: 768px) {
+        font-size: 3.75rem;
+        margin-right: 30px;
+      }
+    }
   }
-  img {
-    width: 100%;
+  .promo-images {
+    display: flex;
+    margin-top: -165px;
+  }
+  .promo1 {
+    width: 667px;
+    height: auto;
+  }
+  .promo2 {
+    width: 533px;
+    height: auto;
   }
 }
