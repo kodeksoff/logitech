@@ -1,0 +1,33 @@
+.tablet {
+  text-align: center;
+  font-size: 0.875rem;
+  .tablet-items {
+    justify-content: center;
+    .tablet-item {
+      border: 1px solid $graphite;
+      flex: 0 0 166px;
+      margin: 3px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 5px;
+      &__title {
+        font-size: 1.25rem;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .slider {
+    position: relative;
+    margin: 27px 0px;
+    margin: 0 auto;
+    img {
+      object-fit: cover;
+      height: 240px;
+      @media (min-width: 576px) {
+        height: 573px;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+$graphite: #2F3132;
+$l-dark: #E0E1E2;
+$l-gray: #EDEDED;
+$d-gray: #C4C4C4;
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.h2-title {
+  font-size: 1.125rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.section-padding {
+  padding-top: 70px;
+}

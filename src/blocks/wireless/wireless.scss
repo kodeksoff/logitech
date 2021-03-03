@@ -1,0 +1,29 @@
+.wireless {
+  text-align: center;
+  background-color: $l-gray;
+
+  .wireless-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:before {
+      content: '';
+      background: url("/img/icon-bluetooth.svg") no-repeat;
+      width: 20px;
+      height: 35px;
+      margin-bottom: 27px;
+    }
+  }
+  p {
+    font-size: 0.875rem;
+  }
+  &__font {
+    font-size: 3.75rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: $d-gray;
+  }
+  img {
+    width: 100%;
+  }
+}

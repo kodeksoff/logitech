@@ -1,0 +1,14 @@
+.sametime {
+  text-align: center;
+  background-color: $l-gray;
+  p {
+    margin-bottom: 36px;
+  }
+  ul {
+    text-align: left;
+    list-style: decimal;
+    li {
+      margin-bottom: 16px;
+    }
+  }
+}
