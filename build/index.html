@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
@@ -77,10 +78,10 @@
             <div class="wireless__font-days">дней</div>
         </div>
         <div class="promo-images">
-            <div class="promo-images__image">
+            <div class="promo-images__image promo-2">
                 <img src="img/promo_2.png" alt="wireless" class="promo2">
             </div>
-            <div class="promo-images__image">
+            <div class="promo-images__image promo-1">
                 <img src="img/promo_1.png" alt="wireless" class="promo1">
             </div>
         </div>
@@ -102,40 +103,25 @@
         </div>
     </div>
     <div class="container-xl p-0 slider">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 5"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 6"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/wood.png" class="d-block w-100 h-" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/wood.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/wood.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/wood.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/wood.png" class="d-block w-100" alt="...">
-                </div>
+        <div class="swiper-container gallery-top">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url(img/wood.png)"></div>
+                <div class="swiper-slide" style="background-image:url(img/glass.png)"></div>
+                <div class="swiper-slide" style="background-image:url(img/linoleum.png)"></div>
+                <div class="swiper-slide" style="background-image:url(img/cloth.png)"></div>
+                <div class="swiper-slide" style="background-image:url(img/marble.png)"></div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+        <div class="swiper-container gallery-thumbs">
+            <div class="slider-title">Переключите поверхность</div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url(img/wood-texture.png)"></div>
+                <div class="swiper-slide" style="background-image:url(img/glass-texture.png)"></div>
+                <div class="swiper-slide" style="background-image:url(img/linoleum-texture.png)"></div>
+                <div class="swiper-slide" style="background-image:url(img/cloth-texture.png)"></div>
+                <div class="swiper-slide" style="background-image:url(img/marble-texture.png)"></div>
+            </div>
+        </div>
     </div>
     <div class="container">
         <p>Благодаря технологии Logitecch Darkfierd, MX Master 3 работает на любой поверхности, даже на стекле.</p>
@@ -161,14 +147,110 @@
       <img src="img/s_time.png" alt="time">
     </div>
 </section>
+<section class="individual section-padding">
+    <div class="container-sm p-0">
+        <h2 class="h2-title">С индивидуальными настройками</h2>
+        <p>Мышь MX Master 3 адаптируется под ваши рабочие процессы. Благодаря индивидуальным настройкам, вы сможете настроить кнопки и жесты практически под любое используемое приложение.</p>
+        <div class="individual__features">
+            <div class="desktop">
+                <img src="img/features.png" alt="features">
+            </div>
+            <div class="mobile">
+                <div class="swiper-container mobile-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/1.png" alt="1"></div>
+                        <div class="swiper-slide"><img src="img/2.png" alt="1"></div>
+                        <div class="swiper-slide"><img src="img/3.png" alt="1"></div>
+                        <div class="swiper-slide"><img src="img/4.png" alt="1"></div>
+                        <div class="swiper-slide"><img src="img/5.png" alt="1"></div>
+                        <div class="swiper-slide"><img src="img/6.png" alt="1"></div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="individual__features-block">
+                <img src="img/icons-apps.png" alt="icons">
+                Начните работать продуктивнее с момента покупки — устройство
+                предварительно оптимизировано под популярные приложения
+                на Windows и Mac.
+            </div>
+        </div>
+    </div>
+</section>
+<section class="last section-padding">
+    <div class="container-lg p-0">
+        <div class="last-wrapper">
+            <div class="last-wrapper__line">
+                <div class="last-wrapper__line-one">
+                    <img src="img/image-1.png" alt="img">
+                </div>
+                <div class="last-wrapper__line-one dect-l">
+                    <div class="line-one__title h2-title">
+                        Комфортно. <br />
+                        Эргономично. <br />
+                        Интуитивно. <br/>
+                    </div>
+                    <div class="line-one__desc">
+                        Дизайн мыши MX Master 3 разработан так, чтобы с точностью повторять форму вашей ладони. Но не менее важны колесико прокрутки для большого пальца и расположение кнопок жестов,
+                        с которыми вы будете творить уверенно как никогда.
+                    </div>
+                </div>
+            </div>
+            <div class="last-wrapper__line">
+                <div class="last-wrapper__line-two dect-r">
+                    <div class="line-two__title h2-title">
+                        Быстрее, <br/>
+                        чем когда либо
+                    </div>
+                    <div class="line-two__desc">
+                        Компьютерная мышь MX Master 3 предлагает ультимативный
+                        механизм прокрутки со скоростью
+                        1000 строк за 1 секунду.
+                        С точностью до пикселя. Бесшумно.
+                    </div>
+                </div>
+                <div class="last-wrapper__line-two">
+                    <img src="img/image-2.png" alt="img">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="footer">
+            Copyright © 2021 Logitech<br />
+            Все права защищены
+        </div>
+    </div>
+</footer>
 <script src="js/app.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 <script>
-    var myCarousel = document.querySelector('#carousel')
-    var carousel = new bootstrap.Carousel(myCarousel, {
-        interval: 2000,
-        wrap: false
-    })
+    let galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 10,
+        slidesPerView: 5,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        onlyExternal: true,
+        noSwiping: true,
+        allowTouchMove: false
+    });
+    let galleryTop = new Swiper('.gallery-top', {
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        thumbs: {
+            swiper: galleryThumbs
+        }
+    });
+    let swiper = new Swiper('.mobile-swiper', {
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    });
 </script>
 </body>
 </html>

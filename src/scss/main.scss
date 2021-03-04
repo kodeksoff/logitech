@@ -7,13 +7,16 @@
 @import "node_modules/bootstrap/scss/reboot";
 @import "node_modules/bootstrap/scss/containers";
 @import "node_modules/bootstrap/scss/grid";
-@import "node_modules/bootstrap/scss/carousel";
 @import "node_modules/bootstrap/scss/helpers";
 @import "node_modules/bootstrap/scss/utilities/api";
 @import "node_modules/hamburgers/_sass/hamburgers/hamburgers";
+
 
 @import "styles";
 @import "../blocks/header/header";
 @import "../blocks/wireless/wireless";
 @import "../blocks/tablet/tablet";
 @import "../blocks/sametime/sametime";
+@import "../blocks/individual/individual";
+@import "../blocks/last/last";
+@import "../blocks/footer/footer";
