@@ -1,0 +1,86 @@
+.wireless {
+  text-align: center;
+  background-color: $l-gray;
+
+  .wireless-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:before {
+      content: '';
+      background: url("/img/icon-bluetooth.svg") no-repeat;
+      width: 20px;
+      height: 35px;
+      margin-bottom: 27px;
+    }
+  }
+  &__font {
+    font-size: 3.75rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: $d-gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+    .wireless__font-70 {
+      font-size: 18.75rem;
+      line-height: 16rem;
+      @media (max-width: 992px) {
+        font-size: 11.375rem;
+        margin-right: 30px;
+      }
+      @media (max-width: 768px) {
+        font-size: 3.75rem;
+        margin-right: 15px;
+        line-height: 6rem;
+        margin-bottom: 35px;
+      }
+    }
+
+    .wireless__font-days {
+      font-size: 6rem;
+      @media (max-width: 992px) {
+        font-size: 9.375rem;
+      }
+      @media (max-width: 768px) {
+        font-size: 3.75rem;
+        margin-right: 30px;
+      }
+    }
+  }
+
+  .promo-images {
+    display: flex;
+    margin-top: -165px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .promo1 {
+    width: 667px;
+    height: auto;
+  }
+
+  .promo2 {
+    width: 533px;
+    height: auto;
+  }
+
+  .promo-2 {
+    @media (max-width: 992px) {
+      display: none;
+    }
+  }
+
+  .promo-1 {
+    @media (max-width: 992px) {
+      text-align: center;
+      margin-top: 100px;
+    }
+  }
+}

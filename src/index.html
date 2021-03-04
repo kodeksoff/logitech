@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+</head>
+<body class="antialiased">
+@@include('./blocks/header/header.html')
+@@include('./blocks/wireless/wireless.html')
+@@include('./blocks/tablet/tablet.html')
+@@include('./blocks/sametime/sametime.html')
+@@include('./blocks/individual/individual.html')
+@@include('./blocks/last/last.html')
+@@include('./blocks/footer/footer.html')
+<script src="js/app.js"></script>
+<script>
+    let galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 10,
+        slidesPerView: 5,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+        onlyExternal: true,
+        noSwiping: true,
+        allowTouchMove: false
+    });
+    let galleryTop = new Swiper('.gallery-top', {
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        thumbs: {
+            swiper: galleryThumbs
+        }
+    });
+    let swiper = new Swiper('.mobile-swiper', {
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    });
+</script>
+</body>
+</html>
